@@ -86,4 +86,4 @@ jobs:
         run: npm install -g surge
 
       - name: Deploy To Surge
-        run: surge ./ http://literate-sidewalk.surge.sh/ --token ${{secrets.SURGE_TOKEN}}
+        run: surge ./build http://literate-sidewalk.surge.sh/ --token ${{secrets.SURGE_TOKEN}}
