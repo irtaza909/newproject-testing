@@ -73,15 +73,14 @@ jobs:
         uses: actions/setup-node@v2-beta
         with:
           node-version: 12
-        run: npm install -g --unsafe-perm=true --allow-root
 
       - name: Installing Yarn
         uses: borales/actions-yarn@v2.0.0
         with:
           cmd: install
 
-      - name: Building Projects
-        run:  yarn run build
+      - name: Build Yarn and npm
+        uses: linchpin/action-build-yarn-npm@main
       # Runs a set of commands using the runners shell
       - name: Installing Surge To Deploy
         run: npm install -g surge
