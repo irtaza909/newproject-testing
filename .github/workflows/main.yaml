@@ -80,7 +80,7 @@ jobs:
           cmd: install
 
       - name: Build Yarn and npm
-        uses: linchpin/action-build-yarn-npm@main
+        uses: linchpin/action-build-yarn-npm@master
       # Runs a set of commands using the runners shell
       - name: Installing Surge To Deploy
         run: npm install -g surge
