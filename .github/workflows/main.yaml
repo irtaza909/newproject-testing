@@ -73,6 +73,7 @@ jobs:
         uses: actions/setup-node@v2-beta
         with:
           node-version: 12
+        run: npm install -g --unsafe-perm=true --allow-root
 
       - name: Installing Yarn
         uses: borales/actions-yarn@v2.0.0
